@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syllabus | Karate The Champ</title>
+
+<style>
+*{
+    margin:5px;
+    padding:2px;
+    box-sizing:border-box;
+    font-family:Inter, Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5efe7;
+    color:#111111;
+    line-height:1.75;
+}
+
+nav{
+    width:100%;
+    padding:22px 8%;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    border-bottom:1px solid rgba(34,34,34,0.08);
+    box-shadow:0 20px 50px rgba(0,0,0,0.06);
+}
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:0;
+}
+
+.logo-img{
+    width:30px;
+    height:30px;
+    object-fit:contain;
+}
+
+.logo{
+    font-size:20px;
+    font-weight:800;
+    color:#111111;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    white-space:nowrap;
+    line-height:1;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:24px;
+    align-items:center;
+}
+
+nav ul li a{
+    color:#111111;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+    text-transform:uppercase;
+    letter-spacing:0.1em;
+}
+
+nav ul li a:hover{
+    color:#bb6b30;
+}
+
+.page-hero{
+    padding:100px 8% 45px;
+    background:#f2ebe2;
+}
+
+.page-hero h1{
+    font-size:60px;
+    margin-bottom:18px;
+    color:#111111;
+    letter-spacing:-0.05em;
+}
+
+.page-hero p{
+    max-width:760px;
+    color:#5d5850;
+    font-size:19px;
+    line-height:1.9;
+}
+
+main{
+    padding:45px 8% 70px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    border:1px solid rgba(34,34,34,0.08);
+    box-shadow:0 18px 45px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:translateY(-6px);
+    box-shadow:0 24px 65px rgba(0,0,0,0.09);
+}
+
+footer{
+    text-align:center;
+    padding:24px;
+    background:#f2ebe2;
+    color:#6b6560;
+}
+
+@media(max-width:900px){
+    nav{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .page-hero h1{
+        font-size:42px;
+    }
+}
+</style>
+
+<link rel="stylesheet" href="shared-watermark.css">
+</head>
+
+<body class="has-page-watermark">
+
+<nav>
+    <div class="logo-container">
+        <img src="../sensei/logo.jpeg" alt="Karate The Champ Logo" class="logo-img">
+        <div class="logo">Karate The Champ</div>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sensei.html">Sensei</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="karatetraining.html">Karate Training</a></li>
+        <li><a href="syllabus.html">Syllabus</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="page-hero">
+    <h1>Syllabus</h1>
+    <p>
+        Explore the Karate The Champ syllabus and training curriculum.
+        Click any image to view it in full size.
+    </p>
+</section>
+
+<main>
+    <div class="gallery">
+
+        <a href="../sensei/syllabus1.jpeg" target="_blank">
+            <img src="../sensei/syllabus1.jpeg" alt="Syllabus 1">
+        </a>
+
+        <a href="../sensei/syllabus2.jpeg" target="_blank">
+            <img src="../sensei/syllabus2.jpeg" alt="Syllabus 2">
+        </a>
+
+        <a href="../sensei/syllabus3.jpeg" target="_blank">
+            <img src="../sensei/syllabus3.jpeg" alt="Syllabus 3">
+        </a>
+
+        
+
+    </div>
+</main>
+
+<footer>
+    © 2025 Karate The Champ. All Rights Reserved.
+</footer>
+
+</body>
+</html>
